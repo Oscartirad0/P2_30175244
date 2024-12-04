@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clínica Dental</title>
-    <link href= "/css/style.css" rel= "stylesheet" type="text/css">
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
   </head>
  <body>
     <header>
@@ -22,7 +22,7 @@
     <main>
         <section id="servicios">
             <h2>Nuestros Servicios</h2>
-            <p>Ofrecemos una amplia gama de servicios dentales, incluyendo: limpiezas, empastes, ortodoncia, extracciones dentales, tratamiento de conducto, protesis dentales y muchos más.</p>
+            <p>Ofrecemos una amplia gama de servicios dentales, incluyendo: limpiezas, empastes, ortodoncia, extracciones dentales, tratamiento de conducto, prótesis dentales y muchos más.</p>
             <img src="https://th.bing.com/th/id/OIP.QVolK9-32tSGB7g7HRgRGAHaEK?w=309&h=180&c=7&r=0&o=5&pid=1.7" alt="Servicios Dentales">
         </section>
         <section id="beneficios">
@@ -57,9 +57,24 @@
             <img src="https://th.bing.com/th/id/OIP.Bu1bsJ2Iu23RCK28vEX4TwHaEe?w=278&h=180&c=7&r=0&o=5&pid=1.7" alt="Contacto Clínica">
         </section>
     </main>
+    <section id="formulario-contacto">
+        <h3>Formulario de Contacto</h3>
+        <form action="/formulario" autocomplete="off" method="post">
+        
+            <label for="email">Correo Electrónico:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="name">Nombre:</label><br>
+            <input type="text" id="name" name="nombre" required><br><br>
+            
+            <label for="message">Mensaje:</label><br>
+            <textarea id="message" name="mensaje" rows="4" cols="50" required></textarea><br><br>
+            
+            <input type="submit" class="btn" value="Enviar">
+        </form>
+    </section>
     <footer>
         <p>© 2024 Clínica Dental. Todos los derechos reservados.</p>
     </footer>
   </body>
- </head>
 </html>

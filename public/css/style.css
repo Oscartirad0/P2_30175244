@@ -5,7 +5,7 @@ body {
   background-color: #f2f2f2;
   color: #333;
 }
-  
+
 header {
   background-color: #0055a5;
   color: #fff;
@@ -95,6 +95,67 @@ section img {
   border-radius: 8px;
   margin-top: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#formulario-contacto {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 60px auto;
+}
+
+#formulario-contacto h3 {
+  margin-bottom: 20px;
+  color: #0055a5;
+  font-size: 1.8em;
+  text-align: center; 
+}
+
+#formulario-contacto form {
+  display: flex;
+  flex-direction: column;
+}
+
+#formulario-contacto label {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+#formulario-contacto input[type="email"],
+#formulario-contacto input[type="text"],
+#formulario-contacto textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+  transition: border-color 0.3s ease-in-out;
+}
+
+#formulario-contacto input[type="email"]:focus,
+#formulario-contacto input[type="text"]:focus,
+#formulario-contacto textarea:focus {
+  border-color: #0055a5;
+}
+
+#formulario-contacto input[type="submit"] {
+  background-color: #0055a5;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#formulario-contacto input[type="submit"]:hover {
+  background-color: #003f7f;
 }
 
 footer {
@@ -111,39 +172,43 @@ footer p {
 }
 
 @media (max-width: 768px) {
-    header h1 {
-        font-size: 2em; 
-    }
+  header h1 {
+    font-size: 2em;
+  }
 
-    nav ul li {
-        display: block; 
-        margin: 10px 0; 
-    }
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
 
-    main {
-        padding: 20px; 
-    }
+  main {
+    padding: 20px;
+  }
 
-    section {
-        padding: 20px; 
-    }
+  section {
+    padding: 20px;
+  }
 
-    section h2 {
-        font-size: 1.5em; 
-    }
+  section h2 {
+    font-size: 1.5em;
+  }
 }
 
 @media (max-width: 480px) {
-    header p {
-        font-size: 1em; 
-    }
+  header p {
+    font-size: 1em;
+  }
 
-    section h2 {
-        font-size: 1.2em; 
-    }
+  section h2 {
+    font-size: 1.2em;
+  }
 
-    footer p {
-        font-size: 0.8em; 
-    }
+  footer p {
+    font-size: 0.8em;
+  }
 }
+
+
+
+
 
