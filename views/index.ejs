@@ -1,80 +1,119 @@
 <!DOCTYPE html>
 <html lang="es">
- <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clínica Dental</title>
-    <link href="/css/style.css" rel="stylesheet" type="text/css">
-  </head>
- <body>
-    <header>
-        <h1>¡Bienvenidos a Nuestra Clínica Dental!</h1>
-        <p>¡Sonríe con confianza en nuestra Clínica Dental! 🦷✨</p>
-       <nav>
-            <ul>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#beneficios">Beneficios</a></li>
-                <li><a href="#ventajas">Ventajas</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="servicios">
-            <h2>Nuestros Servicios</h2>
-            <p>Ofrecemos una amplia gama de servicios dentales, incluyendo: limpiezas, empastes, ortodoncia, extracciones dentales, tratamiento de conducto, prótesis dentales y muchos más.</p>
-            <img src="https://th.bing.com/th/id/OIP.QVolK9-32tSGB7g7HRgRGAHaEK?w=309&h=180&c=7&r=0&o=5&pid=1.7" alt="Servicios Dentales">
-        </section>
-        <section id="beneficios">
-            <h2>Beneficios de Elegirnos</h2>
-            <ul>
-                <li><strong>Profesionales Altamente Calificados</strong>: Nuestro equipo está compuesto por dentistas con amplia experiencia y formación continua.</li>
-                <li><strong>Equipos de Última Tecnología</strong>: Utilizamos las herramientas y técnicas más avanzadas para garantizar tratamientos efectivos y seguros.</li>
-                <li><strong>Ambiente Cómodo y Seguro</strong>: Nuestras instalaciones están diseñadas para ofrecer un entorno relajante y seguro para todos nuestros pacientes.</li>
-                <li><strong>Atención Personalizada</strong>: Nos enfocamos en brindar un trato individualizado, adaptándonos a las necesidades específicas de cada paciente.</li>
-                <li><strong>Horarios Flexibles</strong>: Ofrecemos horarios de atención extendidos para acomodar las agendas de nuestros pacientes.</li>
-                <li><strong>Precios Competitivos</strong>: Proporcionamos servicios de alta calidad a precios accesibles, con opciones de financiamiento disponibles.</li>
-            </ul>
-            <img src="https://th.bing.com/th/id/OIP.a82H3NszqFhZXP027-wERgHaEK?w=320&h=180&c=7&r=0&o=5&pid=1.7" alt="Beneficios de la Clínica">
-        </section>
-        <section id="ventajas">
-            <h2>Ventajas de Nuestra Clínica Dental</h2>
-            <ul>
-                <li><strong>Ubicación Conveniente</strong>: Estamos ubicados en el centro de la ciudad, con fácil acceso y estacionamiento disponible.</li>
-                <li><strong>Atención de Emergencias</strong>: Ofrecemos servicios de emergencia para atender cualquier problema dental urgente.</li>
-                <li><strong>Programas de Prevención</strong>: Implementamos programas de prevención para ayudar a nuestros pacientes a mantener una salud dental óptima.</li>
-                <li><strong>Tratamientos Personalizados</strong>: Cada tratamiento es diseñado específicamente para las necesidades individuales de nuestros pacientes.</li>
-                <li><strong>Ambiente Familiar</strong>: Creamos un ambiente acogedor y familiar para que nuestros pacientes se sientan como en casa.</li>
-                <li><strong>Testimonios Positivos</strong>: Contamos con numerosos testimonios de pacientes satisfechos que avalan la calidad de nuestros servicios.</li>
-            </ul>
-            <img src="https://th.bing.com/th/id/OIP.FVcJM3D31R7G5wBBhGrUiwHaEb?w=300&h=180&c=7&r=0&o=5&pid=1.7" alt="Ventajas de la Clínica">
-        </section>
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <p>Dirección: Calle Falsa 123, San Juan de los Morros, Guárico</p>
-            <p>Teléfono: +58 123 456 7890</p>
-            <p>Email: clinicadental2024@gmail.com</p>
-            <img src="https://th.bing.com/th/id/OIP.Bu1bsJ2Iu23RCK28vEX4TwHaEe?w=278&h=180&c=7&r=0&o=5&pid=1.7" alt="Contacto Clínica">
-        </section>
-    </main>
-    <section id="formulario-contacto">
-        <h3>Formulario de Contacto</h3>
-        <form action="/formulario" autocomplete="off" method="post">
-        
-            <label for="email">Correo Electrónico:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
-            
-            <label for="name">Nombre:</label><br>
-            <input type="text" id="name" name="nombre" required><br><br>
-            
-            <label for="message">Mensaje:</label><br>
-            <textarea id="message" name="mensaje" rows="4" cols="50" required></textarea><br><br>
-            
-            <input type="submit" class="btn" value="Enviar">
-        </form>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clínica Dental</title>
+  <link href="/css/style.css" rel="stylesheet" type="text/css">
+  
+  <!-- Global site tag (gtag.js) - Google Analytics --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2YCXDHDNXG"></script> 
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2YCXDHDNXG');
+  </script>
+
+  <!-- Google reCAPTCHA -->
+  <script src="https://www.google.com/recaptcha/enterprise.js?render=6LerqZ0qAAAAADe60bRmfXe5SLcSzzWSFPTWh33Y"></script>
+  <script> 
+    function verificarCaptcha() { 
+      const response = grecaptcha.getResponse(); 
+      if (response.length === 0) { 
+        alert("Por favor, completa el reCAPTCHA."); 
+        return false;
+      } 
+      return true; 
+    }
+  </script>
+  
+</head>
+<body>
+  <header>
+    <h1>¡Bienvenidos a Nuestra Clínica Dental!</h1>
+    <p>¡Sonríe con confianza en nuestra Clínica Dental! 🦷✨</p>
+    <nav>
+      <ul>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#beneficios">Beneficios</a></li>
+        <li><a href="#ventajas">Ventajas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#Ubicación">ubicación</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="servicios">
+      <h2>Nuestros Servicios</h2>
+      <p>Ofrecemos una amplia gama de servicios dentales, incluyendo: limpiezas, empastes, ortodoncia, extracciones dentales, tratamiento de conducto, prótesis dentales y muchos más.</p>
+      <img src="https://th.bing.com/th/id/OIP.QVolK9-32tSGB7g7HRgRGAHaEK?w=309&h=180&c=7&r=0&o=5&pid=1.7" alt="Servicios Dentales">
     </section>
-    <footer>
-        <p>© 2024 Clínica Dental. Todos los derechos reservados.</p>
-    </footer>
-  </body>
+
+    <section id="beneficios">
+      <h2>Beneficios de Elegirnos</h2>
+      <ul>
+        <li><strong>Profesionales Altamente Calificados</strong>: Nuestro equipo está compuesto por dentistas con amplia experiencia y formación continua.</li>
+        <li><strong>Equipos de Última Tecnología</strong>: Utilizamos las herramientas y técnicas más avanzadas para garantizar tratamientos efectivos y seguros.</li>
+        <li><strong>Ambiente Cómodo y Seguro</strong>: Nuestras instalaciones están diseñadas para ofrecer un entorno relajante y seguro para todos nuestros pacientes.</li>
+        <li><strong>Atención Personalizada</strong>: Nos enfocamos en brindar un trato individualizado, adaptándonos a las necesidades específicas de cada paciente.</li>
+        <li><strong>Horarios Flexibles</strong>: Ofrecemos horarios de atención extendidos para acomodar las agendas de nuestros pacientes.</li>
+        <li><strong>Precios Competitivos</strong>: Proporcionamos servicios de alta calidad a precios accesibles, con opciones de financiamiento disponibles.</li>
+      </ul>
+      <img src="https://th.bing.com/th/id/OIP.a82H3NszqFhZXP027-wERgHaEK?w=320&h=180&c=7&r=0&o=5&pid=1.7" alt="Beneficios de la Clínica">
+    </section>
+
+    <section id="ventajas">
+      <h2>Ventajas de Nuestra Clínica Dental</h2>
+      <ul>
+        <li><strong>Ubicación Conveniente</strong>: Estamos ubicados en el centro de la ciudad, con fácil acceso y estacionamiento disponible.</li>
+        <li><strong>Atención de Emergencias</strong>: Ofrecemos servicios de emergencia para atender cualquier problema dental urgente.</li>
+        <li><strong>Programas de Prevención</strong>: Implementamos programas de prevención para ayudar a nuestros pacientes a mantener una salud dental óptima.</li>
+        <li><strong>Tratamientos Personalizados</strong>: Cada tratamiento es diseñado específicamente para las necesidades individuales de nuestros pacientes.</li>
+        <li><strong>Ambiente Familiar</strong>: Creamos un ambiente acogedor y familiar para que nuestros pacientes se sientan como en casa.</li>
+        <li><strong>Testimonios Positivos</strong>: Contamos con numerosos testimonios de pacientes satisfechos que avalan la calidad de nuestros servicios.</li>
+      </ul>
+      <img src="https://th.bing.com/th/id/OIP.FVcJM3D31R7G5wBBhGrUiwHaEb?w=300&h=180&c=7&r=0&o=5&pid=1.7" alt="Ventajas de la Clínica">
+    </section>
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>Dirección: Calle Falsa 123, San Juan de los Morros, Guárico</p>
+      <p>Teléfono: +58 123 456 7890</p>
+      <p>Email: clinicadental2024@gmail.com</p>
+      <img src="https://th.bing.com/th/id/OIP.Bu1bsJ2Iu23RCK28vEX4TwHaEe?w=278&h=180&c=7&r=0&o=5&pid=1.7" alt="Contacto Clínica">
+    </section>
+  </main>
+  
+  <!-- Sección del mapa -->
+  <section id="Ubicación">
+    <h2>Ubicación del Servicio</h2>
+    <div id="map"></div>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1798.3826636070016!2d-67.36013451492724!3d9.906957658930715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2aaa20760411b1%3A0x80d974a28823a010!2sSan%20Juan%20de%20Los%20Morros%2C%20Gu%C3%A1rico!5e1!3m2!1ses!2sve!4v1737141198775!5m2!1ses!2sve"
+      width="1160" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </section>
+
+  <section id="formulario-contacto">
+    <h3>Formulario de Contacto</h3>
+    <form action="/formulario" method="post" autocomplete="off" onsubmit="return verificarCaptcha();">
+      <label for="email">Correo:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+      
+      <label for="name">Nombre:</label><br>
+      <input type="text" id="name" name="nombre" required><br><br>
+      
+      <label for="message">Mensaje:</label><br>
+      <textarea id="message" name="mensaje" rows="4" cols="50" required></textarea><br><br>
+      <!-- reCAPTCHA widget --> 
+      <div class="g-recaptcha" data-sitekey="6LdluJ0qAAAAALIeI_uqDJfY46RZBVFXpr1wCfxh"></div><br>
+      
+      <input type="submit" class="btn" value="Enviar">
+    </form>
+  </section>
+  <footer>
+    <p>© 2024 Clínica Dental. Todos los derechos reservados.</p>
+  </footer>
+</body>
 </html>

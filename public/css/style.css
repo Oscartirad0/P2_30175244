@@ -1,3 +1,4 @@
+/* General Styles */
 body {
   font-family: 'Helvetica Neue', sans-serif;
   margin: 0;
@@ -77,6 +78,13 @@ section h2 {
   text-align: center;
 }
 
+section h3 {
+  color: #0055a5;
+  margin-top: 0;
+  font-size: 2em;
+  text-align: center;
+}
+
 section p {
   line-height: 1.6;
 }
@@ -91,6 +99,16 @@ section ul li {
 }
 
 section img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#Ubicacion-del-servicio{
   max-width: 100%;
   border-radius: 8px;
   margin-top: 15px;
@@ -158,6 +176,18 @@ section img {
   background-color: #003f7f;
 }
 
+#map { 
+  
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+ 
+}
+
 footer {
   background-color: #0055a5;
   color: #fff;
@@ -207,6 +237,9 @@ footer p {
     font-size: 0.8em;
   }
 }
+
+
+
 
 
 

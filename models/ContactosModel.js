@@ -1,18 +1,18 @@
 import sqlite3 from 'sqlite3';
+sqlite3.verbose();
 
 const db = new sqlite3.Database('./MiBaseDeDatos.db');
 
 class ContactosModel {
-  static saveContact(contact) {
+  static saveContact({ email, nombre, mensaje, ip, fecha, country, region, city }) {
     return new Promise((resolve, reject) => {
-      const { email, nombre, mensaje, ip, fecha } = contact;
-      const query = `INSERT INTO contactos (email, nombre, mensaje, ip, fecha)
-                     VALUES (?, ?, ?, ?, ?)`;
-      db.run(query, [email, nombre, mensaje, ip, fecha], function (err) {
+      const query = `INSERT INTO contactos (email, nombre, mensaje, ip, fecha, country, region, city) VALUES (?, ?, ?, ?, ?, ?, ?, ?)`;
+      db.run(query, [email, nombre, mensaje, ip, fecha, country, region, city], function(err) {
         if (err) {
-          return reject(err);
+          reject(err);
+        } else {
+          resolve(this.lastID);
         }
-        resolve(this.lastID);
       });
     });
   }
